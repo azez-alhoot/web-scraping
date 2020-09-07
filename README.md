@@ -8,9 +8,8 @@
 
 ### Link:
 
-https://github.com/azez-alhoot/game-of-greed/pull/4
+https://github.com/azez-alhoot/web-scraping/pull/1
 
 ### Note:
 
 I used pytest to test our code.
-
