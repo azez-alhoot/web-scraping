@@ -13,14 +13,7 @@ def test_length():
 
 def test_preceding_passage():
 
-    expected = 'Though the city was founded relatively late, a sanctuary has existed there since very ancient times[when?].[citation needed]\n'
+    expected = open("test.txt", "r")
     actual = get_citations_needed_report('https://en.wikipedia.org/wiki/Petra')
 
-    assert expected == actual[0]
-
-def test_preceding_passage_2():
-
-    expected = 'Though the city was founded relatively late, a sanctuary has existed there since very ancient times[when?].'
-    actual = get_citations_needed_report('https://en.wikipedia.org/wiki/Petra')
-
-    assert expected == actual[1]
+    assert expected.read() == actual
